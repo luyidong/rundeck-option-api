@@ -9,10 +9,12 @@ from django.conf.urls import url
 from  .views import (
     list,
     log,
+    logfile,
 )
 
 urlpatterns = [
     url(r'^list/',list, name='list'),
     url(r'^log',log, name='log'),
+    url(r'^logfile',logfile, name='logfile'),
 ]
 
